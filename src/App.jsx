@@ -27,7 +27,7 @@ export default function App() {
   ):(
     <div className='App font-bold'>
   <h1 className='my-2'>Pagination</h1>
-  <div>
+  <div className='flex flex-wrap justify-center'>
   {
  
     [...Array(numberOfPages).keys() ].map((index)=>(<span className={`p-1 border-green-400 border-2 m-1 cursor-pointer ${currentPage===index?'bg-green-400 text-white':''}`}
